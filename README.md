@@ -6,11 +6,18 @@ All source svg files are from [Nordic](https://github.com/EliverLara/Nordic) the
 
 ## Installation
 
-Extract the zip file to the themes directory i.e. `/usr/share/themes/` or `~/.themes/` (create it if necessary).
+### Step 1. Clone theme
 
-To set the theme on XFCE run:
+For current user:
+```
+git clone https://github.com/yumagulovrn/Nordic-xhdpi.git ~/.themes/Nordic-xhdpi
+```
+For everyone:
+```
+sudo git clone https://github.com/yumagulovrn/Nordic-xhdpi.git /usr/share/themes/Nordic-xhdpi
+```
+### Step 2. Set current theme to Nordic-xhdpi
 ```
 xfconf-query -c xfwm4 -p /general/theme -s Nordic-xhdpi
 ```
 or change via distribution specific tool.
-
